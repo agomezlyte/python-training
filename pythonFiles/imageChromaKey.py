@@ -8,10 +8,10 @@ import numpy as np
 
 ## Image import and format processing"""
 
-image = cv2.imread("./images/chroma.jpg")
+image = cv2.imread("../images/chroma.jpg")
 image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
-landscape = cv2.imread("./images/landscape.jpg")
+landscape = cv2.imread("../images/landscape.jpg")
 landscape = cv2.cvtColor(landscape, cv2.COLOR_BGR2RGB)
 width_height = (image.shape[1], image.shape[0])
 landscape = cv2.resize(landscape, width_height)
